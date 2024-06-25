@@ -1,5 +1,3 @@
-console.log("The client-side java script code is loaded");
-
 /* NOS CONECNTRAREMOS EN RECUPERAR INFOMACIÓN INTRODUCIDA 
 POR EL USUARIO através de un formulario, con código js
 clinet side, USANDO LA API FETCH (QUE NO ES PARTE DE JS) 
