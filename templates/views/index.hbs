@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Index</title>
+        <meta description="html document for the root of our website">
+        <meta name="viewport" content="width=device_width, initial-scale=1.0">
+        <link rel="stylesheet" href="/css/styles.css">
+        <link rel="icon" href="/img/favicon.webp">
+    </head>
+    <body>
+        {{>header}}
+        <h2>{{title}}</h2>
+        <!-- Haremos de el contenido del elemento h1 un
+        contenido dinámico ES DECIR QUE EL CONTENIDO SERÁ
+        PROPORCIONADO POR NODEJS EN LUGAR DEL PROPIO 
+        ARCHIVO.
+        
+        Para proporcionar un valor dinámico, TENDRÁ QUE
+        SER PROPORCIONADO COMO ARGUMENTO, MANDANDO A 
+        LLAMAR AL MÉTODO render PROPORCIONADO POR EXPRESS
+        
+        Después usamos usamos sintaxis y funcionalidades
+        de hbs: {{title}} andentro HACES REFERENCIA A LA COSA
+        A LA QUE TRATAS DE ACCEDER (por lo general son 
+        los nombres de los atributos contenidos por un 
+        objeto literal pasado como argumento al método 
+        render). -->
+
+        <p>Use this site to get your weather!</p>
+
+        <form>
+            <label for="city">City</label>
+            <input name="city" type="text" placeholder="A city" required>
+
+            <label for="state">State</label>
+            <input name="state" type="text" placeholder="A state" required>
+
+            <label for="country">Country</label>
+            <input name="country" type="text" placeholder="A country" required>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <h2></h2>
+        <p id="forecast"></p>
+
+        {{>footer}}
+
+        <script src="./js/app.js"></script>
+    </body>
+</html>
+
+<!-- un archivo hbs SOLO ES UN ARCHIVO HTML con unas
+cuantas funcionalidades más PARA INYECTAR VALORES 
+DINÁMICOS -->

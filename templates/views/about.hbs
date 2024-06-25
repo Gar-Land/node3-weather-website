@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>About</title>
+        <meta charset="utf-8">
+        <meta description="About us">
+        <meta name="viewport" content="width=device_width, initial-scale=1.0">
+        <link rel="stylesheet" href="/css/styles.css">
+        <link rel="icon" href="/img/favicon.webp">
+    </head>
+    <body>
+        {{>header}}
+        <main>
+            <section class="what-we-do">
+                <h2>{{titles.[0]}}</h2>
+                <img class="racing" src="/img/racing.jpeg" alt="the king racing">
+            </section>
+
+            <section class="our-history">
+                <h2>{{titles.[1]}}</h2>
+                <img class="dinoco-team" src="/img/team-dinoco.webp" alt="the dinoco team">
+            </section>
+
+            <section class="about-me">
+                <h2>{{titles.[2]}}</h2>
+                <img class="the-king" src="/img/the-king.jpg" alt="a photo of the king">
+            </section>
+        </main>
+
+        {{>footer}}
+    </body>
+</html>

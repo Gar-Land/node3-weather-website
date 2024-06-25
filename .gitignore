@@ -1,0 +1,11 @@
+# Hay un solo folder que no queremos rastrear
+# cuando trabajas con npm y git, no querrás que git tome
+# registro del estado del folder node_modules ya que 
+# este solo es un directorio generado Y SIEMPRE PODEMOS
+# RECREARLO EJECUTANDO npm install
+
+# git nos da una manera sencilla de ignorar cosas en 
+# nuestro proyecto creando un nuevo archivo EN LA RAÍZ DEL
+# REPOSITORIO llamado ".gitignore" donde alistas las cosas
+# que no quieres que git mentenga un registro
+node_modules/

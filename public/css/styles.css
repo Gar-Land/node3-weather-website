@@ -1,0 +1,115 @@
+body {
+    /* font shorthand: font-style font-variant font-weight font-size line-height font-family */
+    text-align: left;
+    margin: 0 auto;
+    font-family: arial;
+    padding: 0 16px;
+}
+
+h1, h2 {
+    color: #333333;
+    font: normal normal bold 30px/1.2em;
+}
+
+ul  {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: baseline;
+    padding: 0px;
+}
+
+li {
+    display: block;
+    flex-grow: 1;
+}
+
+li a{
+    color: #888888;
+    text-decoration: none;
+}
+
+footer {
+    color: #888888;
+    border-top: 1px solid #eeeeee;
+}
+
+header {
+    border-bottom: 1px solid #eeeeee;
+}
+
+img {
+    width: 100%;
+}
+
+form {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-items: flex-end;
+    align-items: flex-start;
+    row-gap: 10px;
+
+    margin: 25px auto;
+    /* Coloca el el forumlario en el centro de la línea 
+    horizontal */
+    background-color: #fff;
+    /* Hace que su posición pueda trasladarse relativo a 
+    su posición inicial, ES REQUERIDA PARA TRASLADAR LOS
+    LABELS CUANDO SE ACTIVEN LOS EVENTOS on click y focus */
+}
+
+input {
+    position: relative;
+    top: -3.2em; 
+    left: 4em;
+
+    width: 400px;
+    height: 40px;
+
+    font-size: 12px;
+    color: #999;
+    background: transparent; 
+    /* Hace que el fondo del elemento sea transparente */
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    transition: all .3s ease;
+}
+
+label {
+    font-weight: bold;
+    font-size: 12px;
+    color: #999;
+
+    background-color: #fff;
+    margin-right: 12000rem;
+
+    cursor: text;
+    transition: all .3s ease;
+}
+
+input:focus {
+    border-color: blue;
+    outline: 1px solid blue;
+     /* el borde de los elementos
+    input tendrán un vorde de color azul CUANDO SE 
+    ACTIVE EL EVENTO FOCUS */
+}
+
+button {
+    display: block;
+    padding: 1em 3em;
+
+    border: 6px solid rgba(130, 128, 128, 0.2);
+    border-radius: 50px;
+
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-clip: padding-box;
+    color: #fff;
+    background-image: linear-gradient(90deg, #7b81ec, #3bd1d3);
+}
+
+footer {
+    position: relative;
+    top: 1.6rem;
+}
